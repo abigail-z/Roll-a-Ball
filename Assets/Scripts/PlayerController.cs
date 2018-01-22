@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
     public float movementSpeed;
     public Text countText;
     public Text winText;
-    public AudioSource audio;
+    public AudioSource audioSource;
 
     private Rigidbody rb;
     private int count;
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour {
         countText.text = "Count: " + count;
         if (count >= winCount)
         {
-            audio.Play();
+            audioSource.Play();
             winText.text = "You Win!";
         }
     }
