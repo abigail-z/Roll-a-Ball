@@ -7,7 +7,7 @@ public class Rotator : MonoBehaviour {
     // Update is called once per frame
 	void Update ()
     {
-        Vector3 rotation = new Vector3(15, 30, 45);
+        Vector3 rotation = new Vector3(30, 60, 90);
         rotation *= Time.deltaTime;
         transform.Rotate(rotation);
 	}
